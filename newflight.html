@@ -1,0 +1,304 @@
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>New Flight</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="myjs.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poppins">
+
+		<link rel="stylesheet" href="mycss.css">
+		
+	</head>
+	
+	<style type="text/css">
+		.affix{
+			top:5rem;
+		}
+		
+		body{
+position: relative;
+		};
+		
+	</style>
+	<body data-spy="scroll" data-target="#myscroll">
+				<nav class="navbar navbar-inverse" data-spy="affix"  style="border-radius:0px !important; margin:0;border: 0 ; width: 100%;top:0;z-index: 9999 !important">
+					<div class="navbar-header">
+						  <a class="navbar-brand" href="index.html">Airline-X</a>
+						</div>
+						<div class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>
+									<span class="caret"></span></a>
+								<ul class="dropdown-menu" style="padding: 1rem 2rem 1rem 2rem; text-align: center;" >
+									<li><a href="#"><b>Admin Name</b></a></li>
+									<hr>
+									<li><a href="#">View Profile</a></li>
+									<li><a href="#">Settings</a></li>
+									<hr>
+									<li><a href="#">Logout</a></li>
+								</ul>
+						</li>
+						<ul class="nav navbar-nav navbar-right" style="padding: 0 3rem 0 0">
+								<li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+						</ul>
+					</div>
+					</div>
+				</nav>
+
+
+
+
+
+
+		<div class="container" data-spy="affix" style="margin: 0;bottom: 0;float: left;top:5rem;width: 20%;height:100%; background-color: #222222">
+
+		  <ul class="nav nav-pills nav-stacked" style="border-radius: 0">
+		    <li>
+		    	<a href="#" id="m1">Dashboard</a>
+		    	<ul id="sub1" style="padding: 0 0 0 0">
+		    		<div class="list-group">
+					  <li><a href="home.html" class="list-group-item">Home</a></li>
+					  <li><a href="user.html" class="list-group-item">Users</a></li>
+					</div>
+				</ul>
+		    </li>
+		    <li>
+		    	<a href="#" id="m2">Flight Schedule</a>
+			    <ul id="sub2" style="padding: 0 0 0 0; display: none;">
+			    	<div class="list-group" >
+					  <a href="newflight.html" class="list-group-item">Add new Flight</a>
+					  <a href="manageflights.html" class="list-group-item">Manage flights</a>
+					</div>
+			    </ul>
+			</li>
+			
+			<li>
+				<a href="#" id="m3">Airbus</a>
+			    <ul id="sub3" style="padding: 0 0 0 0; display: none;">
+			    	<div class="list-group" >
+					  	<a href="newAirbus.html" class="list-group-item">Add new airbus</a>
+					  	<a href="newAirbus.html" class="list-group-item">Manage Airbus</a>
+					</div>
+			    </ul>
+			</li>
+		    <li>
+		    	<a href="#" id="m4">Accounts</a>
+		    	<ul id="sub4" style="padding: 0 0 0 0; display: none;">
+		 			<div class="list-group">
+					  	<a href="accounts.html" class="list-group-item">Create new account</a>
+					  	<a href="accounts.html" class="list-group-item">Password Reset</a>
+					</div>
+		    	</ul>
+		    </li>
+		  </ul>
+		</div>
+
+
+
+			<div id="#myscroll" class="container" style="margin-left: 0;margin-top: 5rem; float: right; width:80%; padding: 0 5rem 0 5rem">
+				<h2>New Flight</h2>
+		  		<hr>
+				<div  style="width: 100%">
+					<div class="panel-group">
+					  	<div class="panel panel-default">
+					    	<div class="panel-heading">
+					    		<legend style="text-align: center;">Flight Information</legend>
+					    	</div>
+					    	<div class="panel-body">
+					    		<div class="input-group">
+									<label for="class">Airbus No:</label>
+									<select class="form-control">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									</select>
+									<a href="#"></a>
+								</div>
+								<br>
+
+							<form class="form-inline">
+								<div class="input-group">
+									<label for="">Flight No:</label>
+									<input type="number" class="form-control" placeholder="Flight No." name="" required>
+								</div>
+
+
+									<br><br>
+									<div>
+										<div class="input-group">
+											<label for="from">From</label>
+											<input type="text" class="form-control" placeholder="Origin" name=""  id="from" required>
+										</div>
+										<div class="input-group">
+											<label for="to">To</label>
+											<input type="text" class="form-control" placeholder="Destination" name="" id="to" required>
+										</div>
+									</div>
+								
+
+									<br>
+									<div>
+										<div class="input-group">
+											<label for="Departure">Departure Date</label>
+											<input type="date" class="form-control" name="date1" min="2017-01-01" id="Departure" required>
+										</div>
+										<div class="input-group">
+											<label>Departure Time</label>
+											<input type="time" class="form-control" name="" id="" >
+										</div>
+									</div>
+								
+								
+									<br>
+									<div>
+										<div class="input-group">
+											<label for="Adults">Journey Hours</label>
+											<input type="number" class="form-control" id="" value="1" name="" min="1" required>
+										</div>
+										<div class="input-group">
+											<label>Intervals</label>
+											<input type="number" class="form-control" id="" value="0" name="" min="0">
+										</div>
+									</div>
+								<!--class tabs-->
+								<br>
+							<div class="container" style="margin: 0 0 0 0;padding: 0 0 0 0;float: center;width: 100%" >
+								<div class="row">
+
+								<div class="col-sm-4">
+									<div class="panel-group">
+									    <div class="panel panel-default">
+									      	<div class="panel-heading" data-toggle="collapse" href="#collapse1">
+									        <h4 class="panel-title">First</h4>
+									     	</div>
+
+									      	<div id="collapse1" class="panel-collapse collapse">
+									        	<div class="panel-body">
+									        		
+
+
+									        			<div>
+															<div class="input-group">
+																<label>Seats</label>
+																<input type="number" class="form-control" id="" value="0" min="0" required>
+															</div>
+															<div class="input-group">
+																<label>Price <small>(for each seat)</small></label>
+																<input type="number" class="form-control" value="0" min="0" required>
+															</div>
+															<div class="input-group">
+																<label>Features</label>
+																<input type="text" class="form-control" placeholder="add new features">
+															</div>
+														</div>
+													
+
+
+									        	</div>
+									      	</div>
+									    </div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									 <div class="panel-group">
+									    <div class="panel panel-default">
+									      	<div class="panel-heading" data-toggle="collapse" href="#collapse2">
+									        <h4 class="panel-title">Business</h4>
+									     	</div>
+
+									      	<div id="collapse2" class="panel-collapse collapse">
+									        	<div class="panel-body">
+
+
+
+														<div>
+															<div class="input-group">
+																<label>Seats</label>
+																<input type="number" class="form-control" id="" value="0" min="0" required>
+															</div>
+															<div class="input-group">
+																<label>Price <small>(for each seat)</small></label>
+																<input type="number" class="form-control" value="0" min="0" required>
+															</div>
+															<div class="input-group">
+																<label>Features</label>
+																<input type="text" class="form-control" placeholder="add new features">
+															</div>
+														</div>
+													
+
+
+												</div>
+									      	</div>
+									    </div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									  <div class="panel-group">
+									    <div class="panel panel-default">
+									      	<div class="panel-heading" data-toggle="collapse" href="#collapse3">
+									        <h4 class="panel-title">Economy</h4>
+									     	</div>
+									      	<div id="collapse3" class="panel-collapse collapse">
+									        	<div class="panel-body">
+
+
+
+														<div>
+															<div class="input-group">
+																<label>Seats</label>
+																<input type="number" class="form-control" id="" value="0" min="0" required>
+															</div>
+															<div class="input-group">
+																<label>Price <small>(for each seat)</small></label>
+																<input type="number" class="form-control" value="0" min="0" required>
+															</div>
+															<div class="input-group">
+																<label>Features</label>
+																<input type="text" class="form-control" placeholder="add new features">
+															</div>
+														</div>
+													
+
+
+												</div>
+									      	</div>
+									    </div>
+									</div>
+								</div>
+							</div>
+							</div>
+
+								<!--button-->
+								<br>
+								<div style="text-align: right;">
+									<button type="submit" class="btn btn-primary"><a href="manageflights.html" style="color: white"><i class="fa fa-plus"></i> Add</a></button>
+								</div>
+					    	</div>
+
+</form>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	  
+	</body>
+</html>
+<script type="text/javascript">
+			$("#m1").click({param1:"#sub1",param2:"#sub2",param3:"#sub3",param4:"#sub4"},navbar_movment);
+	$("#m2").click({param1:"#sub2",param2:"#sub1",param3:"#sub3",param4:"#sub4"},navbar_movment);
+	$("#m3").click({param1:"#sub3",param2:"#sub1",param3:"#sub2",param4:"#sub4"},navbar_movment);
+	$("#m4").click({param1:"#sub4",param2:"#sub1",param3:"#sub2",param4:"#sub3"},navbar_movment);
+
+		</script>s

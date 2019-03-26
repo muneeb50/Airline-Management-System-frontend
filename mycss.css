@@ -1,0 +1,119 @@
+
+	body{
+			font-family: 'Poppins', sans-serif;
+
+		}
+
+
+
+.carousel-caption {
+    top: 20% !important;
+    bottom: auto;
+    text-size:24px;
+	}
+	
+	.carousel-caption h2 {
+    font-size: 9rem;
+    margin-bottom: 0;
+    color: #FFF;
+    font-weight: 300;
+}
+
+	
+	.carousel-caption p {
+	 color: rgba(255, 255, 255, 0.65);
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0;
+    padding-bottom: 1.75rem;
+    letter-spacing: .25rem;
+	}
+
+	 header{
+		color: white;
+
+	}
+
+ 	
+	
+
+
+
+
+	#footer {
+		padding: 4rem 0 2rem 0 ;
+		background: #000;
+		text-align: center;
+		width: 100% !important;
+		bottom: 0;
+
+	}
+	ul.icons li {
+				display: inline-block;
+				padding: 0 2rem 0 0;
+				font-size: 36px;
+			}	
+
+
+
+
+
+
+
+	.background-wrapper {
+			background-color: #000;
+			color: #bfbfbf;
+			
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center;
+			position: relative;
+		}
+
+	
+
+
+
+		.panel-transparent {
+        background: none;
+
+        border-radius: 0;
+        border:none;
+
+
+    }
+
+    .panel-transparent .panel-heading{
+        background: rgba(122, 130, 136, 0.6)!important;
+        
+    }
+
+    .panel-transparent .panel-body{
+        background:rgba(46,51,56,0.4)!important;
+    }
+
+
+
+
+    .trans-input-area{
+       background-color:rgba(0,0,0,0.4) !important;
+       border:none !important;
+       color: #fff;
+    };
+
+
+    /*list groups*/
+
+    .list-group
+	{
+		margin: 0;
+	}
+
+	.list-group-item{
+		margin: none;
+		border: none;
+		border-radius: 0;
+		background-color: black;
+		text-align: center;
+	};

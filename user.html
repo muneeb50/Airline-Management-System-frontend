@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>Users</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Poppins">
+
+        <link rel="stylesheet" href="mycss.css">
+        <script type="text/javascript" src="myjs.js"></script>
+    </head>
+	
+	<body>
+
+
+			<nav class="navbar navbar-inverse" style="border-radius:0px !important; margin-bottom: 0">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>                       
+                      </button>
+                      <a class="navbar-brand" href="#">Airline-X</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span>
+									<span class="caret"></span></a>
+								<ul class="dropdown-menu" style="padding: 1rem 2rem 1rem 2rem; text-align: center;" >
+									<li><a href="#"><b>Admin Name</b></a></li>
+									<hr>
+									<li><a href="#">View Profile</a></li>
+									<li><a href="#">Settings</a></li>
+									<hr>
+									<li><a href="#">Logout</a></li>
+								</ul>
+							</li>
+                            <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                        </ul>
+                    </div>  
+                </div>
+            </nav>
+
+<div class="container-fluid" style="margin: 0 0 0 0; padding: 0 0 0 0">
+
+		<div class="container-fluid" style="margin-left: 0;margin-right:0;padding: 0 0 0 0;width: 20%; float: left;">
+		  <ul class="nav nav-pills nav-stacked" style="width:100%;">
+		    <li class="active">
+		    	<a href="#" id="m1">Dashboard</a>
+		    	<ul id="sub1" style="padding: 0 0 0 0">
+		    		<div class="list-group" style="text-align: center;margin: 0">
+					  <a href="home.html" class="list-group-item">Home</a>
+					  <a href="user.html" class="list-group-item">Users</a>
+					</div>
+				</ul>
+		    </li>
+		    
+		    <li  class="active">
+		    	<a href="#" id="m2">Flight Schedule</a>
+			    <ul id="sub2" style="padding: 0 0 0 0; display: none;">
+			    	<div class="list-group" style="margin: 0;text-align: center;">
+					  <a href="newflight.html" class="list-group-item">Add new Flight</a>
+					  <a href="manageflights.html" class="list-group-item ">Manage flights</a>
+					</div>
+			    </ul>
+			</li>
+			
+			<li  class="active">
+				<a href="#" id="m3">Airbus</a>
+			    <ul id="sub3" style="padding: 0 0 0 0; display: none;">
+			    	<div class="list-group" style="margin: 0;text-align: center;">
+					  	<a href="newAirbus.html" class="list-group-item">Add new airbus</a>
+					  	<a href="newAirbus.html" class="list-group-item">Manage Airbus</a>
+					</div>
+			    </ul>
+			</li>
+		    <li  class="active">
+		    	<a href="#" id="m4">Accounts</a>
+		    	<ul id="sub4" style="padding: 0 0 0 0; display: none;">
+		 			<div class="list-group" style="margin: 0;text-align: center;">
+					  	<a href="accounts.html" class="list-group-item">Create new account</a>
+					  	<a href="accounts.html" class="list-group-item">Password Reset</a>
+					</div>
+		    	</ul>
+		    </li>
+		  </ul>
+		</div>
+
+
+		
+				<div class="container-fluid" style="float: right; width: 80%">
+				<h2>Users</h2>
+			  	<hr>
+				</div>
+			<div class="container" style="margin-left: 0; float: right; width:80%; margin-top: 10px; padding: 0 5rem 0 5rem">
+				<div>
+					<button class="btn btn-primary"><i class="fa fa-plus"></i> New User</button>
+				</div>
+				<br>
+			  	<table class="table table-striped table-hover">
+				    <thead>
+					    <tr>
+					    	<th>#</th>
+					        <th>ID</th>
+					        <th>FirstName</th>
+					        <th>LastName</th>
+					        <th>Phone</th>
+					        <th>Email</th>
+					    </tr>
+				    </thead>
+				    <tbody>
+					    <tr>
+					    	<td>1</td>
+					    	<td>4091</td>
+					        <td>John</td>
+					        <td>Wick</td>
+					        <td>0300-1234567</td>
+					        <td>john@gmail.com</td>
+					        <td>
+						  	<a href=""><i class="fa fa-pencil"></i></a>
+						  	<a href="#myModal" role="button" data-toggle="modal"><i class="fa fa-trash-o"></i></a>
+					  		</td>
+					    </tr>
+					    <tr>
+					    	<td>1</td>
+					    	<td>4091</td>
+					        <td>John</td>
+					        <td>Wick</td>
+					        <td>0300-1234567</td>
+					        <td>john@gmail.com</td>
+					        <td>
+						  	<a href=""><i class="fa fa-pencil"></i></a>
+						  	<a href="#myModal" role="button" data-toggle="modal"><i class="fa fa-trash-o"></i></a>
+					  		</td>
+					    </tr>
+					    <tr>
+					    	<td>1</td>
+					    	<td>4091</td>
+					        <td>John</td>
+					        <td>Wick</td>
+					        <td>0300-1234567</td>
+					        <td>john@gmail.com</td>
+					        <td>
+						  	<a href=""><i class="fa fa-pencil"></i></a>
+						  	<a href="#myModal" role="button" data-toggle="modal"><i class="fa fa-trash-o"></i></a>
+					  		</td>
+					    </tr>
+				    </tbody>
+			  </table>
+
+				  <ul class="pagination">
+					  <li ><a href="#">&laquo;</a></li>
+					  <li class="active"><a href="#">1</a></li>
+					  <li><a href="#">2</a></li>
+					  <li><a href="#">3</a></li>
+					  <li><a href="#">4</a></li>
+					  <li><a href="#">5</a></li>
+					  <li><a href="#">&raquo;</a></li>
+					</ul>
+			</div>
+		</div>
+
+				<div class="modal small fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							<h3 id="myModalLabel">Delete Confirmation</h3>
+						</div>
+						<div class="modal-body">
+							<p class="error-text"><i class="fa fa-warning modal-icon"></i> Are you sure you want to delete the user?<br>This cannot be undone.</p>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Cancel</button>
+							<button class="btn btn-danger" data-dismiss="modal">Delete</button>
+						</div>
+					  </div>
+					</div>
+				</div>
+
+				<!-- Footer -->
+			<footer id="footer" class="container-fluid" style="position: absolute;bottom: 0">
+				<div class="copyright">
+					&copy; Airline-X. All rights reserved.
+				</div>
+			</footer>
+
+
+	  
+	</body>
+</html>
+
+<script type="text/javascript">
+			$("#m1").click({param1:"#sub1",param2:"#sub2",param3:"#sub3",param4:"#sub4"},navbar_movment);
+	$("#m2").click({param1:"#sub2",param2:"#sub1",param3:"#sub3",param4:"#sub4"},navbar_movment);
+	$("#m3").click({param1:"#sub3",param2:"#sub1",param3:"#sub2",param4:"#sub4"},navbar_movment);
+	$("#m4").click({param1:"#sub4",param2:"#sub1",param3:"#sub2",param4:"#sub3"},navbar_movment);
+
+		</script>
